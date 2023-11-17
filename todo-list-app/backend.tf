@@ -9,8 +9,9 @@
 
 
 terraform {
-  backend "remote" {
+  cloud {
     organization = "nemozon-sandbox"
+
     workspaces {
       name = "K8-ArgoCD"
     }
